@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Projets | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">MON PORTFOLIO</div>
+            <div class="logo"><span class="highlight-blue">MON</span> PORTFOLIO</div>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
                 <li><a href="competences.html">Compétences</a></li>
                 <li><a href="experiences.html">Expériences</a></li>
-                <li><a href="veille.html" class="active">Veille</a></li>
+                <li><a href="veille.html">Veille</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
                     <li><strong>Déploiement :</strong> Création d'une image système et clonage avec <strong>Clonezilla</strong>.</li>
                 </ul>
 
-             <a href="fichiers/Livrable_1_SIDSIC.pdf" class="btn-secondary" download>Télécharger ma documentation (PDF)</a>
+                <a href="fichiers/Livrable_1_SIDSIC.pdf" class="btn-secondary" download>Télécharger ma documentation (PDF)</a>
             </div>
         </div>
 
@@ -53,10 +53,65 @@
                     <li><strong>Réseau :</strong> Configuration de <strong>pfSense</strong> (Pare-feu, gestion WAN/LAN, DHCP).</li>
                     <li><strong>Services de Domaine :</strong> Installation de <strong>Windows Server 2022</strong> avec Active Directory (AD DS).</li>
                     <li><strong>Gestion de Parc :</strong> Mise en place de <strong>GLPI</strong> sur serveur Debian pour l'inventaire et le helpdesk.</li>
-                    <li><strong>Système :</strong> Administration Linux avancée (gestion des permissions, paquets et dépannage réseau).</li>
                 </ul>
 
-                <a href="fichiers/Document_Installation_AP2.pdf" class="btn-secondary" download>Télécharger ma documentation (PDF)</a>
+                <a href="fichiers/Document_Installation_AP2.pdf" class="btn-secondary" download> Télécharger ma documentation (PDF)</a>
+            </div>
+        </div>
+
+        <div class="category-box">
+            <h3 class="category-title">Projet AP3 : SI Hautement Disponible et Interconnecté (ECP)</h3>
+            <div class="exp-desc">
+                <p style="margin-bottom: 15px;"><strong>Résumé :</strong> Mise en place d'une infrastructure hautement disponible pour un centre de formation (ECP). Le projet consistait à assurer la continuité des services (AD, Fichiers, DHCP) sur deux sites distants interconnectés via un tunnel VPN.</p>
+                
+                <p style="color: var(--accent-blue); font-weight: bold; margin-bottom: 5px;">Technologies & méthodes utilisées :</p>
+                <ul class="exp-list" style="margin-bottom: 20px;">
+                    <li><strong>Haute Disponibilité :</strong> Configuration de <strong>DFS / DFSR</strong> pour la réplication de fichiers et du <strong>Failover DHCP</strong>.</li>
+                    <li><strong>Interconnexion :</strong> Mise en place d'un tunnel <strong>VPN Site-à-Site</strong> sécurisé entre les infrastructures.</li>
+                    <li><strong>Infrastructure Microsoft :</strong> Déploiement de contrôleurs de domaine redondants et gestion avancée des GPO.</li>
+                    <li><strong>Sécurité :</strong> Filtrage inter-sites via <strong>pfSense</strong> et authentification centralisée des utilisateurs.</li>
+                    <li><strong>Sauvegarde :</strong> Solution de stockage NAS/SAN via <strong>iSCSI</strong> pour la protection des données critiques.</li>
+                </ul>
+
+                <p style="margin-top: 20px; color: var(--accent-blue); font-weight: bold;">Documents du projet :</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+                    <a href="fichiers/AP3_Livrable_Technique.pdf" class="btn-secondary" download>
+                         Télécharger mon Livrable Technique
+                    </a>
+
+                    <a href="fichiers/AP3_Cahier_des_Charges.pdf" class="btn-secondary" download style="opacity: 0.8;">
+                          Voir le Cahier des Charges
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-box">
+            <h3 class="category-title">Projet AP4 : Résilience et Connectivité - Sécurité Civile (COD)</h3>
+            <div class="exp-desc">
+                <p style="margin-bottom: 15px;"><strong>Résumé :</strong> Modernisation du SI du Centre Opérationnel Départemental pour la Sécurité Civile. L'objectif était de garantir la résilience des communications critiques (VoIP, Messagerie) et de permettre un accès sécurisé aux agents sur le terrain.</p>
+                
+                <p style="color: var(--accent-blue); font-weight: bold; margin-bottom: 5px;">Technologies & méthodes utilisées :</p>
+                <ul class="exp-list" style="margin-bottom: 20px;">
+                    <li><strong>Haute Disponibilité :</strong> Mise en œuvre du protocole <strong>CARP</strong> sur <strong>pfSense</strong> pour la redondance des pare-feux.</li>
+                    <li><strong>Communications :</strong> Déploiement de <strong>Microsoft Exchange</strong> et de la téléphonie sur IP avec <strong>XIVO</strong>.</li>
+                    <li><strong>Mobilité :</strong> Configuration d'un accès distant via <strong>OpenVPN Road Warrior</strong>.</li>
+                    <li><strong>Applications métiers :</strong> Installation du logiciel <strong>eBrigade</strong> et supervision des services.</li>
+                    <li><strong>Réseau :</strong> Gestion de la résilience Internet via du multi-WAN sur hyperviseur <strong>Proxmox</strong>.</li>
+                </ul>
+
+                <p style="margin-top: 20px; color: var(--accent-blue); font-weight: bold;">Documents du projet :</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+                    <a href="fichiers/AP4_Documentation_Technique.pdf" class="btn-secondary" download>
+                         Documentation Technique
+                    </a>
+                    <a href="fichiers/AP4_Livrable_Bilan.pdf" class="btn-secondary" download>
+                         Livrable & Bilan Final
+                    </a>
+                    <a href="fichiers/AP4_Cahier_des_Charges.pdf" class="btn-secondary" download style="opacity: 0.8;">
+                         Cahier des Charges
+                    </a>
+                </div>
             </div>
         </div>
 
